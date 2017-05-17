@@ -60,20 +60,20 @@ Feature: As a member of the public
       | Animal care       |
       | Office Support    |
 
-  @javascript @billy  
-  Scenario: Infowindow appears when clicking on volunteer opportunity title
-    Given the following organisations exist:
-      | name                      | description          | address        | latitude    | longitude  |
-      | Cats Are Us               | Animal Shelter       | 34 pinner road | 51.5986313  | -0.3356556 |
-      | Office Primer             | Care for the elderly | 64 pinner road | 61.1116313  |  7.3356556 |
-    Given the following volunteer opportunities exist:
-      | title              | description                     | organisation             |
-      | Litter Box Scooper | Assist with feline sanitation   | Cats Are Us              |
-      | Office Support     | Help with printing and copying. | Office Primer            |
-    And I visit the volunteer opportunities page
-    And cookies are approved
-    Then I should see an infowindow when I click on "volunteer opportunity title":
-      | Litter Box Scooper | Office Support |
+  # @javascript @billy  
+  # Scenario: Infowindow appears when clicking on volunteer opportunity title
+  #   Given the following organisations exist:
+  #     | name                      | description          | address        | latitude    | longitude  |
+  #     | Cats Are Us               | Animal Shelter       | 34 pinner road | 51.5986313  | -0.3356556 |
+  #     | Office Primer             | Care for the elderly | 64 pinner road | 61.1116313  |  7.3356556 |
+  #   Given the following volunteer opportunities exist:
+  #     | title              | description                     | organisation             |
+  #     | Litter Box Scooper | Assist with feline sanitation   | Cats Are Us              |
+  #     | Office Support     | Help with printing and copying. | Office Primer            |
+  #   And I visit the volunteer opportunities page
+  #   And cookies are approved
+  #   Then I should see an infowindow when I click on "volunteer opportunity title":
+  #     | Litter Box Scooper | Office Support |
       
   @javascript @billy
   Scenario: See map when editing my volunteer opportunity

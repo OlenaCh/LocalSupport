@@ -9,11 +9,11 @@
     <table>
       <% @volunteer_ops.each do |op| %>
           <tr>
-            <td>
-              <strong class='organisation-title'
-                      data-lat="<%= op.latitude %>" 
-                      data-lng="<%= op.longitude %>" >
-                <%= op.title %>
+            <td class='center-map-on-op'
+                data-lat="<%= op.latitude %>" 
+                data-lng="<%= op.longitude %>"  >
+              <strong>
+                <%= link_to_vol_op(op, :title) %>
               </strong><br/>
               <div id='organisations'>
                 <small><%= link_to_vol_op(op, :organisation) %></small>
